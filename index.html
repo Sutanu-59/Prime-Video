@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="height: 8vh; width:80%; margin: auto;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="prime logo.png" alt="prime" style="width:100px;" class="">
+                </a>
+                <!-- <a class="navbar-brand" href="javascript:void(0)">Logo</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" role="button"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">All</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Movies</a></li>
+                                <li><a class="dropdown-item" href="tv shows.html">TV Shows</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Store</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="rent.html">Rent</a></li>
+                                <li><a class="dropdown-item" href="#">Channels</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Live TV</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Categories</a>
+                            <ul class="dropdown-menu submenu" id="dmenu">
+                                <div class="categories">
+                                    <div class="catr">
+                                        <h3>Genres</h3>
+                                        <div class="boxcat">
+                                            <ul type="none" style="width: 150%;">
+                                                <li><a href="">Action And Adventure</a></li>
+                                                <li><a href="">Anime</a></li>
+                                                <li><a href="">Comedy</a></li>
+                                                <li><a href="">Documentary</a></li>
+                                                <li><a href="">Drama</a></li>
+                                                <li><a href="">Fantasy</a></li>
+                                            </ul>
+                                            <ul type="none" style="width: 150%;">
+                                                <li><a href="">Horror</a></li>
+                                                <li><a href="">International</a></li>
+                                                <li><a href="">Kids</a></li>
+                                                <li><a href="">Music Videos and Concerts</a></li>
+                                                <li><a href="">Mystery and Thrillers</a></li>
+                                                <li><a href="">Romance</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catr">
+                                        <h3>Featured Collections</h3>
+                                        <div class="boxcat">
+                                            <ul type="none" style="width: 150%;">
+                                                <li><a href="">Hindi</a></li>
+                                                <li><a href="">English</a></li>
+                                                <li><a href="">Telegu</a></li>
+                                                <li><a href="">Tamil</a></li>
+                                                <li><a href="">Malayalam</a></li>
+
+                                            </ul>
+                                            <ul type="none" style="width: 150%;">
+                                                <li><a href="">Kanada</a></li>
+                                                <li><a href="">Marathi</a></li>
+                                                <li><a href="">Punjabi</a></li>
+                                                <li><a href="">Gujrati</a></li>
+
+                                                <li><a href="">Bengali</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search" style="height: 7vh;">
+                        <button class="btn btn-primary" type="button"
+                            style="height: 8vh; margin-top: 5px;">Search</button>
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="javascript:void(0)">Try For Free</a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="ban">
+        <div class="banrap">
+            <div class="overlay">
+                <div class="bantext">
+                    <h2 style="font-size: 40px;">
+                        Welcome to Prime Video
+                    </h2><br>
+                    <h4 style="font-size: 30px;">
+                        Watch the latest movies, TV shows, and award-winning Amazon Originals
+                    </h4><br>
+                    <button type="button" class="btn btn-primary btn-block"
+                        style="width: 50%; height: 10vh; font-size: 20px;"
+                        onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign in to
+                        join prime
+                    </button>
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post" style="width:50%;background-color: black;">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                                <img src="prime icon.jpg" alt="Avatar" class="avatar" width="30%" height="30%">
+                            </div>
+
+                            <div class="container" style="width: 40%;">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="container">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="mid1">
+        <div class="overlaymid1">
+            <div class="bantext" style="float: right;padding-right: 20px;padding-top: 40px;">
+                <h2 style="font-size: 40px;">
+                    Movie rentals on Prime Video
+                </h2><br>
+                <h4 style="font-size: 30px;">
+                    Early Access to new movies, before digital subscription
+                </h4><br>
+                <button type="button" class="btn btn-primary btn-block"
+                    style="width: 50%; height: 10vh; font-size: 20px;">Rent Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="mid2">
+        <div class="mid2rap">
+            <div class="box">
+                <div class="boxtext">
+                    <h2>
+                        Your favorite channels all in one place
+                    </h2>
+                    <h5>With Prime Video Channels, find shows and movies from your favorite channels all in one place.
+                        Enjoy with an add-on subscription to Channels of your choice</h5>
+                </div>
+            </div>
+            <div class="boximg">
+                <!-- row1 -->
+                <div class="brow">
+                    <a href=""><img src="LionsgatePlay-426X2946_V1.jpg" height="120px" alt=""></a>
+                    <a href=""><img src="426x294_Discovery.jpg" height="120px" alt=""></a>
+                    <a href=""><img src="426x294_BBC_PLAYER.png" height="120px" alt=""></a>
+                </div>
+                <!-- row2 -->
+                <div class="brow">
+                    <a href=""><img src="426x294_MANORAMAMAX.jpg" height="120px" alt=""></a>
+                    <a href=""><img src="hoichoi-426X2946_V1.jpg" height="120px" alt=""></a>
+                    <a href=""><img src="426x294_Chaupal.png" height="120px" alt=""></a>
+                </div>
+                <!-- row3 -->
+                <div class="brow">
+                    <a href=""><img src="Amc.png" height="120px" alt=""></a>
+                    <a href=""><img src="Erosnow-426X2948_V1.jpg" height="120px" alt=""></a>
+                    <a href=""><img src="Mubi-426X2946_V1.jpg" height="120px" alt=""></a>
+                </div>
+                <!-- row4 -->
+                <div class="brow">
+                    <a href=""><img src="Vrott.png" height="120px" alt=""></a>
+                    <a href=""><img src="Stingray.png" height="120px" alt=""></a>
+                    <a href=""><img src="Docubay-426X2947_V1.jpg" height="120px" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mid3">
+        <div class="mid3rap">
+            <img src="prime tv.jfif" height="400" width="500" alt="">
+            <div class="box">
+                <div class="boxtext" style="color: aliceblue;">
+                    <h2>
+                        Even better with Fire TV Stick
+                    </h2><br>
+                    <h5 style="font-size: 20px;">The biggest movies and TV shows are always better on a big screen.
+                        Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the
+                        remote and say the name of the title you want to watch to find it in seconds.</h5>
+                </div><br>
+                <button type="button" class="btn btn-primary btn-block"
+                    style="width: 50%; height: 10vh; font-size: 20px;">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div class="mid3" style="background-image: linear-gradient(to right,black,black,black,grey);">
+        <div class="mid3rap">
+            <div class="box">
+                <div class="boxtext" style="color: aliceblue;">
+                    <h2>
+                        Even better with Fire TV Stick
+                    </h2><br>
+                    <h5 style="font-size: 20px;">The biggest movies and TV shows are always better on a big screen.
+                        Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the
+                        remote and say the name of the title you want to watch to find it in seconds.</h5>
+                </div><br>
+                <button type="button" class="btn btn-primary btn-block"
+                    style="width: 50%; height: 10vh; font-size: 20px;">Get Started</button>
+            </div>
+            <div class="imcontent">
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerrap">
+            <div class="footlogo">
+                <img src="footerlogo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="">Terms and Privacy Notices</a></li>
+                <li><a href="">Send Us Feedback</a></li>
+                <li><a href=""> Help</a></li>
+            </ul>
+            <div class="ftext">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+            <div class="footlast">
+                Developed by <a href="">Sutanu Mukherjee</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
